@@ -12,7 +12,7 @@ if [ -f "/scripts/logs/pull.lock" ]; then
 else
   echo "设定远程仓库地址..."
   cd /scripts
-  git remote set-url origin "$REPO_URL"
+  git remote set-url origin git@github.com:luckybabyjack/jd_scripts.git
   git reset --hard
   echo "git pull拉取最新代码..."
   git -C /scripts pull --rebase
